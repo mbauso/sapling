@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sapling - Help</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sapling application instruction page.">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="leftheader">
+            <h1>[Tree Name]</h1>
+            <a href="index.html">Home</a> | 
+            <a href="help.html">Instructions, Help and FAQ</a> | 
+            <a href="edittree.html" aria-current="page"><span style="border-bottom: 2px solid #333F20;">Edit Tree</span></a> | 
+            <a href="members.html">Member List Example</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="edittree">
+        <div class="canvas">
+            <p>The Java canvas goes here.</p>
+        </div>
+        <div class="sidebar">
+            <h2>Edit Member</h2>
+            <p>Image</p>
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" min="1" required><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="bdate">Birthdate:</label><br>
+                <input type="date" id="bdate" name="bdate"><br>
+                <label for="bplace">Birthplace:</label><br>
+                <input type="text" id="bplace" name="bplace"><br>
+                <label for="note">Note:</label><br>
+                <textarea id="note" name="note" maxlength="500" wrap="soft" placeholder="Put more information about this person here."></textarea><br>
+                <input type="submit" id="save" value="Save">
+            </form>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Sapling &copy;2022 Joseph Montalvo, Trevor Strickland, Khang Tran, and Maddie Bauso.</p>
+    </footer>
+</body>
+</html>

@@ -23,7 +23,14 @@
 
     <main><div class="memberpagewrapper">
     <div class="members">
-        <p class="sort">Sort by: [drop down]</p>
+        <form class="sort">
+            <label for="sort">Sort by: </label>
+            <select id="sort" name="country">
+            <option value="fname">First Name</option>
+            <option value="lname">Last Name</option>
+            <option value="bdate">Age</option>
+            <option value="bplace">Birthplace</option>
+        </select></form>
         <div class="member">
             <div class="imagePH">image here</div>
             <p class="name">Member Name</p>
