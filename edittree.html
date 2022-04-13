@@ -21,24 +21,29 @@
             <a href="members.html">Member List Example</a>
         </div>
         
-            <form class="creation">
-                <span title="Create New Member"><input type="image" class="createnew" src="newmember.png" alt="New Member"></span>
-                <span title="Create New Relation"><input type="image" class="createnew" src="newrelation.png" alt="New Relation"></span>
-            </form>
+        <form class="creation">
+            <span title="Create New Member"><input type="image" class="createnew" src="newmember.png" alt="New Member"></span>
+            <span title="Create New Relation"><input type="image" class="createnew" src="newrelation.png" alt="New Relation"></span>
+        </form>
         
     </header>
 
     <main>
         <div class="sidebar">
             <h2>Edit Member</h2>
-            <p>Image</p>
             <form>
+                <label for="image">Image:</label><br>
+                <input type="file" id="image" name="image" accept="image/png, image/jpeg"><br>
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" min="1" required><br>
+                <label for="sex">Sex:</label><br>
+                <input type="text" id="sex" name="sex"><br>
                 <label for="bdate">Birthdate:</label><br>
                 <input type="date" id="bdate" name="bdate"><br>
                 <label for="bplace">Birthplace:</label><br>
                 <input type="text" id="bplace" name="bplace"><br>
+                <label for="ddate">Death Date:</label><br>
+                <input type="date" id="ddate" name="ddate"><br>
                 <label for="note">Note:</label><br>
                 <textarea id="note" name="note" maxlength="500" wrap="soft" placeholder="Put more information about this person here."></textarea><br>
                 <input type="submit" id="save" value="Save">
